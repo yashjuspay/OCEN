@@ -1,4 +1,4 @@
-# lsp-lender-protocol-specification
+# LSP <-> Lender protocol specification
 APIs for interaction between lender and Loan Service Provider(LSP)
 
 Overview	
