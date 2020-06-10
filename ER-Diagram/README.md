@@ -1,3 +1,3 @@
 # High Level Architecture
 
-![High Level Architecture](C:\Users\lenovo\Desktop\HighLevelArchitecture.PNG)
+![High Level Architecture](https://github.com/juspay/lsp-lender-protocol-specification/blob/master/ER-Diagram/HighLevelArchitecture.PNG)
