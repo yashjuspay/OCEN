@@ -11,3 +11,6 @@ This LSP is being created to showcase the power of the above idea. In its simple
 
 In the longer run, it is envisioned that many more This LSP-like applications (LSPs) will be created. Each of these would focus on distinct borrower pools and build the specialized experiences suited to their customers. This would allow lenders to focus purely on their underwriting and collections logic and cater to diverse collaborations with the LSPs.
 
+# High Level Architecture
+
+![High Level Architecture](https://github.com/juspay/lsp-lender-protocol-specification/blob/master/ER-Diagram/HighLevelArchitecture.PNG)
