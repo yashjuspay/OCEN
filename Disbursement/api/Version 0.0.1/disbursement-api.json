@@ -1,0 +1,281 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "title":"Disbursement API",
+        "description":"set & get disbursement of loan into borrower's account",
+        "version":"3.1"
+    },
+    "paths":{
+        "/v3/disbursement/getDisbursementPlansRequest":{
+            "post":{
+                "description":"Invoked by LSP to get disbursement Plans",
+                "requestBody":{
+                    "description":"Request to lender to get disbursement Plans ",
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Get%20Disbursement%20Plans/GetDisbursementPlansRequest.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Request Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/v3/disbursement/getDisbursementPlansResponse":{
+            "post":{
+                "description":"Invoked by lender to return disbursement Plans",
+                "requestBody":{
+                    "description":"Returns array of disbursement Plans",
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Get%20Disbursement%20Plans/GetDisbursementPlansResponse.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Response Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }                
+            }
+        },
+        "/v3/disbursement/setDisbursementPlanRequest":{
+            "post":{
+                "description":"Invoked by LSP to set disbursement plan",
+                "requestBody":{
+                    "description":"Set Choosen Disbursement Plan in lender's system",
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Set%20Disbursement%20Plan/SetDisbursementPlanRequest.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Request Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+        },
+        "/v3/disbursement/setDisbursementPlanResponse":{
+            "post":{
+                "description":"Invoked by lender to inform lsp about chosenDisbursement status",
+                "requestBody":{
+                    "description":"Send Disbursement Status information to LSP",
+                    "conten":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Set%20Disbursement%20Plan/SetDisbursementPlanResponse.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Response Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        },
+        "/v3/disbursement/getDisbursementAccountsRequest":{
+            "post":{
+                "description":"Invoked by LSP to get array of Disbursement Accounts",
+                "requestBody":{
+                    "description":"Get Disbursement Account Request",
+                    "conten":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Get%20Disbursement%20Accounts/GetDisbursementAccountsRequest.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Request Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        },
+        "/v3/disbursement/getDisbursementAccountsResponse":{
+            "post":{
+                "description":"Invoked by Lender to return array of Disbursement Accounts",
+                "requestBody":{
+                    "description":"Get Disbursement Account Response",
+                    "conten":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Get%20Disbursement%20Accounts/GetDisubusrementAccountsResponse.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Response Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+                } 
+            },
+            "/v3/disbursement/setDisbursementAccountRequest":{
+                "post":{
+                    "description":"Invoked by LSP to set the disbursement Account",
+                    "requestBody":{
+                        "description":"set Disbursement Account Request",
+                        "conten":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Set%20Disbursement%20Account/SetDisbursementAccountRequest.json"
+                                }
+                            }
+                        }
+                    },
+                    "responses":{
+                        "200":{
+                            "description":"Acknowledgement of Request Received",
+                            "content":{
+                                "application/json":{
+                                    "schema":{
+                                        "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+            },
+            "/v3/disbursement/setDisbursementAccountResponse":{
+                "post":{
+                    "description":"Invoked by Lender to inform current status of chosenAccount",
+                    "requestBody":{
+                        "description":"status of chosen account for disbursement",
+                        "conten":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Set%20Disbursement%20Account/SetDisbursementAccountResponse.json"
+                                }
+                            }
+                        }
+                    },
+                    "responses":{
+                        "200":{
+                            "description":"Acknowledgement of Response Received",
+                            "content":{
+                                "application/json":{
+                                    "schema":{
+                                        "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+            },
+            "/v3/disbursement/triggerDisbursementRequest":{
+                "post":{
+                    "description":"Invoked by LSP to trigger Disbursement",
+                    "requestBody":{
+                        "description":"Trigger Disbursement Request",
+                        "conten":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Trigger%20Disbursement/TriggerDisbursementRequest.json"
+                                }
+                            }
+                        }
+                    },
+                    "responses":{
+                        "200":{
+                            "description":"Acknowledgement of Request Received",
+                            "content":{
+                                "application/json":{
+                                    "schema":{
+                                        "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+            },
+            "/v3/disbursement/TriggerDisbursementResponse":{
+                "post":{
+                    "description":"Invoked by Lender to inform status of disbursement",
+                    "requestBody":{
+                        "description":"Trigger Disbursement Response",
+                        "conten":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Trigger%20Disbursement/TriggerDisbursementResponse.json"
+                                }
+                            }
+                        }
+                    },
+                    "responses":{
+                        "200":{
+                            "description":"Acknowledgement of Response Received",
+                            "content":{
+                                "application/json":{
+                                    "schema":{
+                                        "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
+        
+    }
+}

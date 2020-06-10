@@ -1,0 +1,66 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "title":"Get error code",
+        "description":"Get standard error code",
+        "version":"3.1"
+    },
+    "paths":{
+        "/v3/meta/lookup/getErrorCodesRequest":{
+            "post":{
+                "description":"search error code",
+                "requestBody":{
+                    "description":"Request to fetch error code",
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Meta%20APIs/schema/Verion%200.0.1/Get%20Error%20Code/GetErrorCodeRequest.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Request Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "path":{
+        " /v3/meta/lookup/getErrorCodesResponse ":{
+            "post":{
+                "description":"Response to fetch error code request",
+                "requestBody":{
+                    "description":"Invoked by central service as response to Get error code Request, returns description of code",
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Meta%20APIs/schema/Verion%200.0.1/Get%20Error%20Code/GetErrorCodeResponse.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Response Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

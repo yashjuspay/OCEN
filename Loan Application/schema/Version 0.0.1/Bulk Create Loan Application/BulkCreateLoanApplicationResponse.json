@@ -1,0 +1,71 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Loan%20Application/schema/Version%200.0.1/Bulk%20Create%20Loan%20Application/BulkCreateLoanApplicationResponse.json",
+	"type": "object",
+	"required": [
+		"metadata",
+		"response",
+		"requestId",
+		"loanApplications"
+	],
+	"properties": {
+		"metadata": {
+			"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/metadata.json"
+		}
+,
+		"response": { 
+			"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/response.json"
+		}
+,
+		"requestId": { 
+			"type": "string"
+		},
+		"loanApplications": { 
+			"type": "array",
+			"items":{ 
+				"type": "object",
+				"required": [
+					"loanApplicationId",
+					"lender",
+					"loanApplicationStatus"
+				],
+				"properties": {
+					"loanApplicationId": {
+						"type": "string"
+					},
+					"lender": {
+						"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/lender.json"
+					}
+,
+					"loanApplicationStatus": {
+						"type": "string",
+						"enum": [
+							"PROCESSING","OFFERED","OFFER_ACCEPTED","GRANTED","REJECTED","ACTION_REQUIRED"
+						]
+					},
+					"rejectionDetails":{
+						"type":"array",
+						"items": {
+							"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/response.json"
+						}
+					},
+					"actionRequired":{
+						"type":"array",
+						"items": {
+							"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/actionrequired.json"
+						}
+					},
+					"url":{
+						"type":"string"
+					},
+					"extensibleData":{
+						"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/extensibleData.json"
+					}
+				}
+			}
+
+		}
+	}
+}
+
+ 

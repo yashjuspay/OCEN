@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Repayment/schema/Version%200.0.1/Get%20Repayment%20Plans/GetRepaymentPlansRequest.json", 
+	"type": "object",
+	"required": [
+		"metadata",
+		"requestId",
+		"loanId"
+	],
+	"properties": {
+		"metadata": {
+			"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/metadata.json"
+		}
+,
+		"requestId": { 
+			"type": "string"
+		},
+		"loanId": {
+			"type": "string"
+		}
+	}
+}
+
+ 

@@ -1,0 +1,66 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "title":"Get Look Up",
+        "description":"Get possible Value of ENUM fields. This API can be hosted as a service in some central website.",
+        "version":"3.1"
+    },
+    "paths":{
+        "/v3/meta/lookup/getLookupCodesRequest":{
+            "post":{
+                "description":"Get possible values of ENUM fields by lookupType",
+                "requestBody":{
+                    "description":"Request to fetch ENUM for a lookupTypes",
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Meta%20APIs/schema/Verion%200.0.1/Get%20Lookup/GetLookupsRequest.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Request Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "path":{
+        "/v3/meta/lookup/getLookupCodesResponse":{
+            "post":{
+                "description":"Response to LookUps request by LSP server",
+                "requestBody":{
+                    "description":"Invoked by central service as response to LookUps Request",
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Meta%20APIs/schema/Verion%200.0.1/Get%20Lookup/GetLookupsResponse.json"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Acknowledgement of Response Received",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
