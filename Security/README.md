@@ -1,7 +1,7 @@
 # Security
 
 # Overview of Security
-This document describes the security aspects of BHIM for lending and the security processes to be followed between the Lender and the LSP while transmitting data over API calls. On a high level, these are the security aspects that need to be ensured.
+This document describes the security aspects of LSP and the security processes to be followed between the Lender and the LSP while transmitting data over API calls. On a high level, these are the security aspects that need to be ensured.
 
  HTTPS - All API calls must be done securely over HTTPS
 
