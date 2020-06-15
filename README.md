@@ -1,7 +1,7 @@
 # LSP <-> Lender protocol specification
 APIs for interaction between lender and Loan Service Provider(LSP)
 
-Overview	
+# Overview	
 
 Sourcing, identity verification, underwriting, disbursement, recollections and dispute management are few of the many responsibilities managed by a lender today.  Historically, the best lenders have had to excel at each of these skills in order to maximise their profit pools and serve the larger and larger markets.
 
