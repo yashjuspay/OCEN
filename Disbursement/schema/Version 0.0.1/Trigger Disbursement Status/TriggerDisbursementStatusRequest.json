@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#", 
-	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Repayment/schema/Version%200.0.1/Trigger%20Repayment/TriggerRepaymentRequest.json", 
+	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Trigger%20Disbursement%20Status/TriggerDisbursementStatusRequest.json", 
 	"type": "object",
 	"required": [
 		"metadata",
@@ -14,16 +14,20 @@
 			
 		}
 ,
-		"loanId": {
+		"loanId": { 
 			"type": "string"
-		},
+			
+		}
+,
 		"requestId": {
-			"type": "string"
+			"type": "string",
+			"examples": [
+				"e8cc6822bd4bbb4eb1b9e1b4996fbff8acb"
+			]
 		},
-		"payment":{
+		"payment": {
 			"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/payment.json"
 		}
+
 	}
 }
-
- 

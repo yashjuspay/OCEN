@@ -1,9 +1,9 @@
 {
-    "openapi":"3.0.0",
+    "openapi":"3.2.0",
     "info":{
         "title":" Repayment API",
         "description":"API to consume for Repayment set and trigger repayment",
-        "version":"3.1"
+        "version":"3.2"
     },
     "paths":{
         "/v3/repayment/getRepaymentPlansRequest":{
@@ -275,6 +275,33 @@
                             }
                         }
                     }
-                }  
+                },
+                "/v3/repayment/confirmRepayment":{
+                    "post":{
+                        "description":"Invoked by Lender to Confirm repayment ",
+                        "requestBody":{
+                            "description":"Request to lender to Confirm Repayment",
+                            "content":{
+                                "application/json":{
+                                    "schema":{
+                                        "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Repayment/schema/Version%200.0.1/Confirm%20Repayment/ConfirmRepaymentRequest.json"
+                                    }
+                                }
+                            }
+                        },
+                        "reponses":{
+                            "200":{
+                                "description":"Acknowledgement to Response Received",
+                                "content":{
+                                    "application/json":{
+                                        "schema":{
+                                            "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } 
     }
 }

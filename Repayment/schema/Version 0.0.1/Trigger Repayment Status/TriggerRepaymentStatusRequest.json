@@ -5,6 +5,7 @@
 	"required": [
 		"metadata",
 		"requestId",
+		"loanId",
 		"payment"
 	],
 	"properties": {
@@ -14,6 +15,10 @@
 		}
 ,
 		"requestId": {
+			"type": "string"
+		},
+
+		"loanId": {
 			"type": "string"
 		},
 		"payment": {

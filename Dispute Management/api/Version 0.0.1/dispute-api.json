@@ -1,9 +1,9 @@
 {
-    "openapi":"3.0.0",
+    "openapi":"3.2.0",
     "info":{
         "title":"Dispute API",
         "description":"API for raise dispute and get dispute status",
-        "version":"3.1"
+        "version":"3.2"
     },
     "paths":{
         "/v3/loan/dispute/raiseDisputeRequest":{

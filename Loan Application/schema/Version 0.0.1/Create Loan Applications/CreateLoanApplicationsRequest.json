@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#", 
-	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Offers/schema/Version%200.0.1/Generate%20Tentative%20Offer/GenerateTentativeOfferRequest.json", 
+	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Loan%20Application/schema/Version%200.0.1/Create%20Loan%20Applications/CreateLoanApplicationsRequest.json",
 	"type": "object",
 	"required": [
 		"metadata",
@@ -12,10 +12,13 @@
 			"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/metadata.json"
 		}
 ,
-		"requestId": {
-			"type": "string"
+		"requestId": { 
+			"type": "string",
+			"examples": [
+				"e8cc6822bd4bbb4eb1b9e1b4996fbff8acb"
+			]
 		},
-		"loanApplications": { 
+		"loanApplications": {
 			"type": "array",
 			"items":{ 
 				"type": "object",
@@ -33,36 +36,34 @@
 					"createdDate": { 
                         "type": "string"
 					},
-					"loanApplicationId": {
-						"type": "string",
-						"examples": [
-							"e8cc6822bd4bbb4eb1b9e1b4996fbff8acb"
-						]
+					"loanApplicationId": { 
+						"type": "string"
 					},
-					"type": {
+					"type": { 
 						"type": "string",
 						"enum": [
-							"CASHFLOW","HOME","VEHICLE","PERSONAL","BUSINESS"
+							"CASHFLOW","PERSONAL","HOME","VEHICLE","BUSINESS"
 						]
 					},
 					"borrower": {
 						"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/borrower.json"
 					}
 ,
-					"collaterals": {
+					"collaterals": { 
 						"type": "array",
-						"items":{ 
+						"items":{
 							"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/collateral.json"
 						}
 
 					},
-					"guarantors": { 
+					"guarantors": {
 						"type": "array",
 						"items": {
 							"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/guarantor.json"
+							
 						}
 					},
-					"applicants": { 
+					"applicants": {
 						"type": "array",
 						"items":{
 							"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/applicant.json"
@@ -70,8 +71,16 @@
 
 					},
 					"terms": {
-						
 						"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/loanterms.json"
+					},
+					"url":{
+						"type":"string"
+					},
+					"description":{
+						"type":"string"
+					},
+					"extensibleData":{
+						"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/extensibleData.json"
 					}
 
 				}
