@@ -39,6 +39,52 @@ In the longer run, it is envisioned that many more This LSP-like applications (L
 
 ![Trigger Repayment](/Sequence-Diagram/TriggerRepayment.PNG)
 
+# UI - API Mapping
+
+1. CreateLoanApplicationRequest is called when ShareInvoices Button in the below screen is clicked
+
+![Create Loan Application](/UI-Mapping/CreateLoanApplication.PNG)
+
+2. ConsentHandleRequest - For first time users, this API is called during the creating AA account loading screen
+
+![Consent Handle](/UI-Mapping/ConsentHandleRequest.PNG)
+
+3. ConsentStatusRequest - This API is called once the user approves the consent request on the LSP app by clicking on Allow Button.
+
+![Consent Status](/UI-Mapping/ConsentStatus.PNG)
+
+4. Generate Offers Request
+
+This API is called immediately after the ConsentStatusResponse is received from the lender. This API is called during the load screen - Sharing Financial Information with Lenders
+
+![Generate Offers](/UI-Mapping/GenerateOffers.PNG)
+
+5.  AcceptOffer Request and TriggerOTPRequest - This API is invoked when the user clicks on I agree in the Loan Agreement page.
+
+![Loan Aggreement](/UI-Mapping/LoanAggrement.PNG)
+
+6. Verify OTP Request - This API gets invoked when the user manually enters the OTP/ OTP is autoread by Sahay and submitted.
+
+![Verify OTP](/UI-Mapping/VerifyOTP.PNG)
+
+7. SetRepaymentPlanRequest and setRepaymentPlanStatusResponse  - This API is invoked by the LSP once the user clicks on the setAutoRepayment option.
+
+![SetUp Repayment](/UI-Mapping/SetUpRepaymentPlan.PNG)
+
+8. ConsentHandleRequest (For Monitoring) - This API is invoked once the OTP submission is done.
+
+9. ConsentStatusRequest (For Monitoring) - This API is invoked once the user has approved the monitoring consent on the UI by clicking on Allow button
+
+![Consent Monitoring](/UI-Mapping/ConsentStatusReq.PNG)
+
+10. GrantLoanRequest - This API gets called once the repayment is set and the loader screen - processing your loan appears
+
+![Grant Loan](//UI-Mapping/GrantLoan.PNG)
+
+11. TriggerDisbursementRequest - This API gets called once the grantLoanResponse is received from the lender. It happens on the same loader screen where grantLoan is called.
+
+
+
 
 
 
