@@ -19,25 +19,25 @@ In the longer run, it is envisioned that many more This LSP-like applications (L
 
 ![Loan Application](/Sequence-Diagram/LoanApplication.PNG)
 
-![Consent API](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/ConsentAPIs.PNG)
+![Consent API](/Sequence-Diagram/ConsentAPIs.PNG)
 
-![Offer API](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/OfferAPIs.PNG)
+![Offer API](/Sequence-Diagram/OfferAPIs.PNG)
 
-![Loan Acceptance API](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/LoanAcceptanceAPIs.PNG)
+![Loan Acceptance API](/Sequence-Diagram/LoanAcceptanceAPIs.PNG)
 
-![Grant Loan API](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/GrantLoan.PNG)
+![Grant Loan API](/Sequence-Diagram/GrantLoan.PNG)
 
-![Consent Monitoring](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/ConsentMonitoring.PNG)
+![Consent Monitoring](/Sequence-Diagram/ConsentMonitoring.PNG)
 
-![Repayment API](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/RepaymentAPIs.PNG)
+![Repayment API](/Sequence-Diagram/RepaymentAPIs.PNG)
 
-![Confirm Repayment](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/ConfirmRepayment.PNG)
+![Confirm Repayment](/Sequence-Diagram/ConfirmRepayment.PNG)
 
-![Disbursement API](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/Disbirsement.PNG)
+![Disbursement API](/Sequence-Diagram/Disbirsement.PNG)
 
-![Dispute Management](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/DisputeManagement.PNG)
+![Dispute Management](/Sequence-Diagram/DisputeManagement.PNG)
 
-![Trigger Repayment](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/TriggerRepayment.PNG)
+![Trigger Repayment](/Sequence-Diagram/TriggerRepayment.PNG)
 
 
 
