@@ -3,13 +3,21 @@ APIs for interaction between lender and Loan Service Provider(LSP)
 
 # Overview	
 
-Sourcing, identity verification, underwriting, disbursement, recollections and dispute management are few of the many responsibilities managed by a lender today.  Historically, the best lenders have had to excel at each of these skills in order to maximise their profit pools and serve the larger and larger markets.
+India is starved of access to formal, affordable credit. There is a massive market opportunity to be tapped here that has been inhibited because the current rails for flow of capital to the untapped market are broken. 
 
-LSP is an initiative to unbundle lending and enable the creation of specialized entities, each specialized at one part of the job. Therefore, we envision the future of lending to be a partnership between multiple firms individually focused on sourcing/distribution, identity verification, underwriting, capital arrangement, recollections, etc.
+They are broken for the lenders, to be able to reach out to these prospective borrowers and surface creditworthy borrowers. Few of the many reasons include high cost of borrower acquisition and time consuming custom third party tie-ups with loan originators.
 
-This LSP is being created to showcase the power of the above idea. In its simplest form, it's a loan marketplace that enables SMEs to compare loan offers from multiple lenders and choose the best one. In its more advanced version, This LSP would be akin to a borrower’s financial advisor, looking after their interests, fetching the best offers and advising the customer to make good decisions.
+They are broken for the marketplaces to connect their customers with lenders. The custom integrations and manual processes are costly and time consuming. The Turnaround Time to get loans deposited to customers is high and their ability to provide custom financial products quickly is restricted, owing to implementation challenges.
 
-In the longer run, it is envisioned that many more This LSP-like applications (LSPs) will be created. Each of these would focus on distinct borrower pools and build the specialized experiences suited to their customers. This would allow lenders to focus purely on their underwriting and collections logic and cater to diverse collaborations with the LSPs.
+Sourcing, identity verification, underwriting, disbursement, recollections and dispute management are few of the many responsibilities managed by a lender today. Historically, the best lenders have had to excel at each of these skills in order to maximise their profit pools and serve the larger and larger markets.
+
+OCEN is an initiative to unbundle lending and enable the creation of specialized entities, each specialized at one part of the job. Therefore, we envision the future of lending to be a partnership between multiple firms individually focused on sourcing/distribution, identity verification, underwriting, capital arrangement, recollections, etc. The entities like marketplaces who have high business-connect with their customers (businesses or individuals), can embed credit offerings in their applications now. These entities are referred to as 'Loan Service Providers' (LSPs)
+
+A reference LSP is being created to showcase the power of the above idea. In its simplest form, it's a loan marketplace that enables SMEs to compare loan offers from multiple lenders and choose the best one. In its more advanced version, This LSP would be akin to a borrower’s financial advisor, looking after their interests, fetching the best offers and advising the customer to make good decisions.
+
+In the longer run, it is envisioned that many more LSP-like applications (LSPs) will be created. Each of these would focus on distinct borrower pools and build the specialized experiences suited to their customers. This would allow lenders to focus purely on their underwriting and collections logic and cater to diverse collaborations with the LSPs.
+
+This is a manifestation of our efforts to democratise credit.
 
 # High Level Architecture
 
