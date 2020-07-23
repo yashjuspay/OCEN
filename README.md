@@ -93,6 +93,10 @@ This API is called immediately after the ConsentStatusResponse is received from 
 
 11. TriggerDisbursementRequest - This API gets called once the grantLoanResponse is received from the lender. It happens on the same loader screen where grantLoan is called.
 
+12. Disbursement Successful - After the loan is disbursed succesfully. The Success message is loaded in the screen.
+
+![Final Screen](/UI-Mapping/FinalScreen.PNG)
+
 
 
 
