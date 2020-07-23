@@ -13,11 +13,11 @@ In the longer run, it is envisioned that many more This LSP-like applications (L
 
 # High Level Architecture
 
-![High Level Architecture](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/ER-Diagram/HighLevelArchitecture.PNG)
+![High Level Architecture](/ER-Diagram/HighLevelArchitecture.PNG)
 
 # Sequence Diagram
 
-![Loan Application](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/LoanApplication.PNG)
+![Loan Application](/Sequence-Diagram/LoanApplication.PNG)
 
 ![Consent API](https://github.com/juspay/lsp-lender-protocol-specification/blob/LspLenderSpecificationV3.2/Sequence-Diagram/ConsentAPIs.PNG)
 
