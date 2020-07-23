@@ -98,7 +98,7 @@
                     "content":{
                         "application/json":{
                             "schema":{
-                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Loan%20Acceptance/schema/Version%200.0.1/Verify%20Loan%20Acceptance/VerifyLoanAcceptanceResponse.json"
+                                "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Loan%20Acceptance/schema/Version%200.0.1/Verify%20Loan%20Acceptance/VerifyLoanApplicationResponse.json"
                             }
                         }
                     }
