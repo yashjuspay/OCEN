@@ -92,7 +92,7 @@
                 "description":"Invoked by lender to inform lsp about chosenDisbursement status",
                 "requestBody":{
                     "description":"Send Disbursement Status information to LSP",
-                    "conten":{
+                    "content":{
                         "application/json":{
                             "schema":{
                                 "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Set%20Disbursement%20Plan/SetDisbursementPlanResponse.json"
@@ -119,7 +119,7 @@
                 "description":"Invoked by LSP to get array of Disbursement Accounts",
                 "requestBody":{
                     "description":"Get Disbursement Account Request",
-                    "conten":{
+                    "content":{
                         "application/json":{
                             "schema":{
                                 "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Get%20Disbursement%20Accounts/GetDisbursementAccountsRequest.json"
@@ -146,7 +146,7 @@
                 "description":"Invoked by Lender to return array of Disbursement Accounts",
                 "requestBody":{
                     "description":"Get Disbursement Account Response",
-                    "conten":{
+                    "content":{
                         "application/json":{
                             "schema":{
                                 "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Get%20Disbursement%20Accounts/GetDisubusrementAccountsResponse.json"
@@ -173,7 +173,7 @@
                     "description":"Invoked by LSP to set the disbursement Account",
                     "requestBody":{
                         "description":"set Disbursement Account Request",
-                        "conten":{
+                        "content":{
                             "application/json":{
                                 "schema":{
                                     "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Set%20Disbursement%20Account/SetDisbursementAccountRequest.json"
@@ -200,7 +200,7 @@
                     "description":"Invoked by Lender to inform current status of chosenAccount",
                     "requestBody":{
                         "description":"status of chosen account for disbursement",
-                        "conten":{
+                        "content":{
                             "application/json":{
                                 "schema":{
                                     "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Set%20Disbursement%20Account/SetDisbursementAccountResponse.json"
@@ -227,7 +227,7 @@
                     "description":"Invoked by LSP to trigger Disbursement",
                     "requestBody":{
                         "description":"Trigger Disbursement Request",
-                        "conten":{
+                        "content":{
                             "application/json":{
                                 "schema":{
                                     "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Trigger%20Disbursement/TriggerDisbursementRequest.json"
@@ -254,7 +254,7 @@
                     "description":"Invoked by Lender to inform status of disbursement",
                     "requestBody":{
                         "description":"Trigger Disbursement Response",
-                        "conten":{
+                        "content":{
                             "application/json":{
                                 "schema":{
                                     "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Trigger%20Disbursement/TriggerDisbursementResponse.json"
