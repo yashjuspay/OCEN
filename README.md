@@ -43,7 +43,7 @@ In the longer run, it is envisioned that many more This LSP-like applications (L
 
 1. CreateLoanApplicationRequest is called when ShareInvoices Button in the below screen is clicked
 
-![Create Loan Application](/UI-Mapping/CreateLoanApplication.PNG)
+![Create Loan Application](/UI-Mapping/CreateLoanApplication.PNG = 100*20)
 
 2. ConsentHandleRequest - For first time users, this API is called during the creating AA account loading screen
 
@@ -79,7 +79,7 @@ This API is called immediately after the ConsentStatusResponse is received from 
 
 10. GrantLoanRequest - This API gets called once the repayment is set and the loader screen - processing your loan appears
 
-![Grant Loan](//UI-Mapping/GrantLoan.PNG)
+![Grant Loan](/UI-Mapping/GrantLoan.PNG)
 
 11. TriggerDisbursementRequest - This API gets called once the grantLoanResponse is received from the lender. It happens on the same loader screen where grantLoan is called.
 
