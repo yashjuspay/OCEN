@@ -1,4 +1,4 @@
-# LSP <-> Lender protocol specification
+# Open Credit Enablement Network specification
 APIs for interaction between lender and Loan Service Provider(LSP)
 
 # Overview	
