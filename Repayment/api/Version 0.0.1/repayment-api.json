@@ -92,7 +92,7 @@
                 "description":"Invoked by lender to inform lsp about chosenRepayment status",
                 "requestBody":{
                     "description":"Set Repayment plan Status information to LSP",
-                    "conten":{
+                    "content":{
                         "application/json":{
                             "schema":{
                                 "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Repayment/schema/Version%200.0.1/Set%20Repayment%20Plan/SetRepaymentPlanResponse.json"
@@ -119,7 +119,7 @@
                 "description":"Invoked by LSP to fetch status of set repayment plan ",
                 "requestBody":{
                     "description":"Get status of set repayment plan",
-                    "conten":{
+                    "content":{
                         "application/json":{
                             "schema":{
                                 "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Repayment/schema/Version%200.0.1/Set%20Repayment%20Plan%20Status/SetRepayementPlanStatusRequest.json"
@@ -146,7 +146,7 @@
                 "description":"Invoked by Lender to inform status of set Repayment plan",
                 "requestBody":{
                     "description":"Set Repayment Plan status response",
-                    "conten":{
+                    "content":{
                         "application/json":{
                             "schema":{
                                 "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Repayment/schema/Version%200.0.1/Set%20Repayment%20Plan%20Status/SetRepaymentPlanStatusResponse.json"
@@ -181,7 +181,7 @@
                                 }
                             }
                         },
-                        "reponses":{
+                        "responses":{
                             "200":{
                                 "description":"Acknowledgement to Request Received",
                                 "content":{
@@ -208,7 +208,7 @@
                                 }
                             }
                         },
-                        "reponses":{
+                        "responses":{
                             "200":{
                                 "description":"Acknowledgement to Response Received",
                                 "content":{
@@ -235,7 +235,7 @@
                                 }
                             }
                         },
-                        "reponses":{
+                        "responses":{
                             "200":{
                                 "description":"Acknowledgement to Request Received",
                                 "content":{
@@ -262,7 +262,7 @@
                                 }
                             }
                         },
-                        "reponses":{
+                        "responses":{
                             "200":{
                                 "description":"Acknowledgement to Response Received",
                                 "content":{
