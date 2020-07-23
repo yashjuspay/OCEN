@@ -43,7 +43,7 @@ In the longer run, it is envisioned that many more This LSP-like applications (L
 
 1. CreateLoanApplicationRequest is called when ShareInvoices Button in the below screen is clicked
 
-![Create Loan Application](/UI-Mapping/CreateLoanApplication.PNG=100x20) 
+![Create Loan Application](/UI-Mapping/CreateLoanApplication.PNG) 
 
 2. ConsentHandleRequest - For first time users, this API is called during the creating AA account loading screen
 
