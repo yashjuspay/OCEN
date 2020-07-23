@@ -14,3 +14,10 @@ In the longer run, it is envisioned that many more This LSP-like applications (L
 # High Level Architecture
 
 ![High Level Architecture](https://github.com/juspay/lsp-lender-protocol-specification/blob/master/ER-Diagram/HighLevelArchitecture.PNG)
+
+# Sequence Diagram
+
+![Sequence Diagram](https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Sequence-Diagram)
+
+
+
