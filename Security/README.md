@@ -16,9 +16,8 @@ The credit system that we are building is an asynchronous system and we need to 
 # Onboarding Process
 To get the Lender onboarded with respect to security, few details need to be collected and shared. This is a one-time process and can be captured using the below form. Once the Lender completes the onboarding form and sends the data, the LSP will share the Public Key that should be used for communication with the Lender and also the key to verify the requests originating from LSP.
 
-Form - [Link](https://docs.google.com/forms/d/e/1FAIpQLSf6ELx3-KmD72XElvh3WGepvVkwOlWfAouGdtqTZkX3MLgW0w/viewform)
 
-Data captured in this link include
+Data that will be captured are as following
 
  Lender URL - The Lender’s endpoint where the LSP APIs are hosted. This should be the base URL. For example, if the Lender has hosted APIs at the URL - http://bank.com/credit/v3/loanApplication/createLoanApplicationRequest, then the base URL will be http://bank.com/credit
  Lender SSL Certificate
