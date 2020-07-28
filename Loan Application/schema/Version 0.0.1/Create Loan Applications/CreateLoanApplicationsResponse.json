@@ -1,9 +1,10 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#", 
-	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Loan%20Application/schema/Version%200.0.1/Bulk%20Create%20Loan%20Application/BulkCreateLoanApplicationRequest.json",
+	"$id": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Loan%20Application/schema/Version%200.0.1/Create%20Loan%20Applications/CreateLoanApplicationsResponse.json",
 	"type": "object",
 	"required": [
 		"metadata",
+		"response",
 		"requestId",
 		"loanApplications"
 	],
@@ -12,11 +13,12 @@
 			"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/metadata.json"
 		}
 ,
+		"response": { 
+			"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/response.json"
+		}
+,
 		"requestId": { 
-			"type": "string",
-			"examples": [
-				"e8cc6822bd4bbb4eb1b9e1b4996fbff8acb"
-			]
+			"type": "string"
 		},
 		"loanApplications": {
 			"type": "array",
@@ -89,3 +91,5 @@
 		}
 	}
 }
+
+ 
