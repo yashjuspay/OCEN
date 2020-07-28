@@ -281,7 +281,7 @@
                     "description":"Invoked by LSP to trigger Disbursement",
                     "requestBody":{
                         "description":"Trigger Disbursement Status Request",
-                        "conten":{
+                        "content":{
                             "application/json":{
                                 "schema":{
                                     "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Trigger%20Disbursement%20Status/TriggerDisbursementStatusRequest.json"
@@ -308,7 +308,7 @@
                     "description":"Invoked by Lender to inform status of disbursement",
                     "requestBody":{
                         "description":"Trigger Disbursement Response",
-                        "conten":{
+                        "content":{
                             "application/json":{
                                 "schema":{
                                     "$ref":"https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Disbursement/schema/Version%200.0.1/Trigger%20Disbursement%20Status/TriggerDisbursementStatusResponse.json"
