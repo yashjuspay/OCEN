@@ -5,6 +5,7 @@
 	"required": [
 		"metadata",
 		"requestId",
+		"loanId",
 		"response",
 		"payment"
 	],

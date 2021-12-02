@@ -23,7 +23,7 @@
 		"loanApplications": {
 			"type": "array",
 			"items":{ 
-				"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/loanApplication.json"
+				"$ref": "https://github.com/juspay/lsp-lender-protocol-specification/blob/master/Core/schema/Version%200.0.1/loanApplications.json"
 			}
 
 		}

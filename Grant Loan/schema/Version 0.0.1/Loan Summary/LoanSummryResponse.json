@@ -7,6 +7,7 @@
 		"response",
 		"requestId",
 		"loanId",
+		"lenderAccount",
 		"loanStatus",
 		"createdDate",
 		"startDate",
@@ -34,6 +35,13 @@
 				"e8cc6822bd4bbb4eb1b9e1b4996fbff8acb"
 			]
 		},
+		"lenderAccount": {
+            "type":"object",
+            "required": [
+                "accountDataType",
+                "data"
+            ]
+         },
 		"loanStatus": {
 			"type": "string",
 			"enum": [
